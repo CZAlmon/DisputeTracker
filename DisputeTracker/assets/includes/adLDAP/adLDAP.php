@@ -65,14 +65,14 @@ class adLDAP {
     * 
     * @var string
     */   
-	protected $_account_suffix = "@planters.local";
+	protected $_account_suffix = "local.domain";
     
     /**
     * The base dn for your domain
     * 
     * @var string
     */
-	protected $_base_dn = "OU=BANK USERS,DC=planters,DC=local"; 
+	protected $_base_dn = "OU=OrganUnit,DC=DomainController,DC=local"; 
 	
     /**
     * Array of domain controllers. Specifiy multiple controllers if you
@@ -80,7 +80,7 @@ class adLDAP {
     * 
     * @var array
     */
-    protected $_domain_controllers = array ("01-dc03.planters.local");
+    protected $_domain_controllers = array ("domain.controller");
 	
     /**
     * Optional account with higher privileges for searching
